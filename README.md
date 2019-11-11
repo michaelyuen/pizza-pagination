@@ -1,2 +1,2 @@
 # pizzanation
-🍕React pizza pagination component
+🍕A react pizza pagination component.

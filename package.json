@@ -1,0 +1,24 @@
+{
+  "name": "pizza-pagination",
+  "version": "0.0.0",
+  "description": "🍕 A pizza pagination component. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tumfoodery/pizza-pagination.git"
+  },
+  "keywords": [
+    "pizza",
+    "pagination",
+    "component"
+  ],
+  "author": "Sue Ann Ioanis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tumfoodery/pizza-pagination/issues"
+  },
+  "homepage": "https://github.com/tumfoodery/pizza-pagination#readme"
+}

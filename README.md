@@ -1,2 +1,2 @@
-# pizzanation
-🍕A pizza pagination component.
+# pznation
+🍕 A pizza pagination component.

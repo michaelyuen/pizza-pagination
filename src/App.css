@@ -1,0 +1,11 @@
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+span {
+  font-size: 4em;
+}

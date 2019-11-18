@@ -2,10 +2,15 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-size: 2em;
   justify-content: center;
   min-height: 100vh;
 }
 
 span {
   font-size: 4em;
+}
+
+button {
+  font-size: 1em;
 }

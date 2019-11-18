@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
+import PizzaPaginationContainer from "./Styles.js";
 
 const PizzaPagination = ({
   currentPage,
@@ -138,7 +139,7 @@ const PizzaPagination = ({
     return pages
       .filter(
         pageItem =>
-          (pageItem >= 1 && pageItem < numberOfPages) || pageItem === "break"
+          (pageItem >= 1 && pageItem <= numberOfPages) || pageItem === "break"
       )
       .map((pageItem, i) =>
         pageItem === "break"
@@ -148,13 +149,13 @@ const PizzaPagination = ({
   };
 
   return (
-    <div className="PizzaPagination">
+    <PizzaPaginationContainer className="PizzaPagination">
       {renderNavigationButton("first")}
       {renderNavigationButton("previous")}
       {renderPageNumbers()}
       {renderNavigationButton("next")}
       {renderNavigationButton("last")}
-    </div>
+    </PizzaPaginationContainer>
   );
 };
 
@@ -173,12 +174,12 @@ PizzaPagination.propTypes = {
 
 PizzaPagination.defaultProps = {
   firstLabel: "First",
-  hideFirstAndLast: false,
+  hideFirstAndLast: true,
   hideNavigationWhenApplicable: false,
   lastLabel: "Last",
   marginPagesDisplayed: 2,
-  nextLabel: "Next",
-  previousLabel: "Previous"
+  nextLabel: "🍕",
+  previousLabel: "🍕"
 };
 
 export default PizzaPagination;

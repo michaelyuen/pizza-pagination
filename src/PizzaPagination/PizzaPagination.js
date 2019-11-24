@@ -178,8 +178,8 @@ PizzaPagination.defaultProps = {
   hideNavigationWhenApplicable: false,
   lastLabel: "Last",
   marginPagesDisplayed: 2,
-  nextLabel: "🍕",
-  previousLabel: "🍕"
+  nextLabel: "Next",
+  previousLabel: "Previous"
 };
 
 export default PizzaPagination;

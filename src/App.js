@@ -9,7 +9,7 @@ function App() {
       <span aria-label="pizza emoji" role="img">
         🍕
       </span>
-      <h1>Pizza Pagination Coming Soon</h1>
+      <h1>Pizza Pagination</h1>
       <PizzaPagination
         currentPage={currentPage}
         numberOfPages={10}

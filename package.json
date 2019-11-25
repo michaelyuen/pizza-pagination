@@ -2,15 +2,11 @@
   "name": "pizza-pagination",
   "version": "0.1.0",
   "description": "🍕 A pizza pagination component. ",
-  "main": "index.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
-  },
+  "contributors": [
+    "Sue Ann Ioanis <sueann.ioanis@gmail.com>",
+    "Michael Yuen <michaelclaytonyuen@gmail.com>"
+  ],
+  "main": "dist/pizza-pagination.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tumfoodery/pizza-pagination.git"
@@ -20,10 +16,15 @@
     "pagination",
     "component"
   ],
-  "contributors": [
-    "Sue Ann Ioanis <sueann.ioanis@gmail.com>",
-    "Michael Yuen <michaelclaytonyuen@gmail.com>"
-  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "build:dist": "webpack"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tumfoodery/pizza-pagination/issues"
@@ -35,6 +36,18 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0",
     "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-links": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/react": "^5.2.6",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,10 +64,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@storybook/addon-actions": "^5.2.6",
-    "@storybook/addon-links": "^5.2.6",
-    "@storybook/addons": "^5.2.6",
-    "@storybook/react": "^5.2.6"
-  }
+  "files": [
+    "dist"
+  ]
 }
